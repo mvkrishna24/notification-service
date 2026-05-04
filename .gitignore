@@ -1,0 +1,59 @@
+# ── Maven ──────────────────────────────────────────────────────────────────
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# ── Java ───────────────────────────────────────────────────────────────────
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# ── Spring Boot ────────────────────────────────────────────────────────────
+HELP.md
+spring-shell.log
+
+# ── Secrets / Local overrides ──────────────────────────────────────────────
+.env.local
+.env.production
+.env.*.local
+*.secret
+
+# ── IntelliJ IDEA ─────────────────────────────────────────────────────────
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# ── VS Code ────────────────────────────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+# Keep extensions.json so teammates get the same recommended plugins
+!.vscode/extensions.json
+
+# ── Eclipse ────────────────────────────────────────────────────────────────
+.classpath
+.project
+.settings/
+bin/
+
+# ── OS ─────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Docker ─────────────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── k6 load test results ───────────────────────────────────────────────────
+k6/results/
