@@ -70,7 +70,7 @@ public class NotificationServiceImpl implements NotificationService {
     @Override
     @Transactional(readOnly = true)
     public long countPending(Long recipientId) {
-        return notificationRepository.countPendingByRecipientId(recipientId);
+        return notificationRepository.countByRecipientIdAndStatus(recipientId, NotificationStatus.PENDING);
     }
 
     private Notification findOrThrow(Long id) {

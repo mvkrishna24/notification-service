@@ -4,7 +4,9 @@
       "Bash(java -version)",
       "Bash(mvn -version)",
       "Bash(docker --version)",
-      "Bash(docker compose *)"
+      "Bash(docker compose *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }

@@ -123,10 +123,7 @@ app:
 
 # ── Test profile ──────────────────────────────────────────────────────────
 # H2 in-memory DB so `mvn test` runs without Docker.
-# Kafka, Redis, and Mail auto-configuration are excluded in the test class
-# itself (@SpringBootTest excludeAutoConfiguration). When Testcontainers
-# integration tests are added (Phase 2+), they will use the real drivers.
----
+# Kafka, Redis, and Mail auto-configuration are excluded 
 spring:
   config:
     activate:

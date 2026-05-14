@@ -18,6 +18,5 @@ public interface NotificationRepository extends JpaRepository<Notification, Long
 
     List<Notification> findByRecipientIdAndStatus(Long recipientId, NotificationStatus status);
 
-    @Query("SELECT COUNT(n) FROM Notification n WHERE n.recipientId = :recipientId AND n.status = 'PENDING'")
-    long countPendingByRecipientId(@Param("recipientId") Long recipientId);
+    long countByRecipientIdAndStatus(Long recipientId, NotificationStatus status);
 }
